@@ -14,3 +14,14 @@
 ^ (^de): 문자열의 시작 > desk, destination (O) | fade (X)
 
 $ (se$) : 문자열의 끝 > case, base (O) | face (X)
+
+## Beautifulsoup
+print(soup.a) # soup 객체에서 처음 발견되는 a element 출력
+
+print(soup.a.attrs) # a element의 속성정보를 출력
+
+print(soup.a['href']) # a element의 href 속성 값 정보를 출력
+
+print(soup.find('a', attrs={'class':'Nbtn_upload'})) # class = 'Nbtn_upload'인 'a' element' 찾아줘
+
+print(soup.find(attrs={'class':'Nbtn_upload'})) # class = 'Nbtn_upload'인 '어떤' element를 찾아줘
