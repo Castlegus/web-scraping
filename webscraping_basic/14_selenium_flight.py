@@ -29,7 +29,8 @@ browser.find_element_by_link_text('항공권 검색').click()
 
 # 로딩 기다리기
 try: # 성공 했을 시
-    elem = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH,'//*[@id="content"]/div[2]/div/div[4]/ul/li[1]'))) # 브라우저를 최대 10초 기다려라. 어떤 element가 나올 때 까지. 그 elemnet는 xparh 기준에 해당하는
+    elem = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH,'//*[@id="content"]/div[2]/div/div[4]/ul/li[1]'))) 
+        # 브라우저를 최대 10초 기다려라. 어떤 element가 나올 때 까지. 그 elemnet는 xpath 기준에 해당하는
     print(elem.text)
 finally: # 성공 하든 실패 하든 결국
     browser.quit()
